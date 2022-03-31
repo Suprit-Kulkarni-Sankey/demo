@@ -1,0 +1,49 @@
+<div class="register-container">
+    <div class="register-form">
+        <div class="heading">
+            <h1>Sign Up </h1>
+        </div>
+        <form [formGroup]="register">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" formControlName="userName" class="form-control" />
+                <div class="invalid-feedback">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="useoid">UserID</label>
+                <input type="text"  formControlName="userID" class="form-control" />
+                <div class="invalid-feedback" >
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" formControlName="password" class="form-control" />
+                <div class="invalid-feedback">
+                </div>
+            </div>
+            <!-- <div class="form-group">
+                <label for="type">User Type</label>
+                <input type="text" formControlName="userType" class="form-control" />
+                <div class="invalid-feedback">
+                </div>
+            </div> -->
+            <div class="form-group">
+                <label for="logintype">login type:</label>
+                <select class="form-control" name="logintype" id="logintype"  formControlName="userType">
+                  <option value="admin">Admin</option>
+                  <option value="hr">HR</option>
+                  <option value="solution analyst">solustion analyst </option>
+                </select>
+            </div>
+            <div class="form-group-button">
+                <button (click)="userRegister()">
+                    Sign Up
+                </button>
+                <button (click)=" Bcak()">
+                    Cancel
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

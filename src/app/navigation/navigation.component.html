@@ -1,0 +1,8 @@
+<div class="nav">
+    <ul>
+        <li><a  *ngIf="!loginService. islogin()" routerLink="/login">Login</a></li>
+        <li><a *ngIf="!loginService. islogin()" routerLink="/register">Register</a></li>
+        <li><a *ngIf="loginService. islogin()" (click)="logout()">Logout</a></li>
+      </ul>
+</div>
+<router-outlet></router-outlet>

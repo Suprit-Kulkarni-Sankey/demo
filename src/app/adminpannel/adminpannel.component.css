@@ -1,0 +1,26 @@
+
+  .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    width: 15%;
+    height: 175px;
+    float: left;
+    margin: 40px;
+   
+}
+.card p {
+      align-items: center;
+       margin-top: -1px; 
+    background-color: #ffff; 
+    padding: 5px;
+  } 
+  
+  .column {
+    float: right;
+    width: 100%;
+    padding: 0 10px;
+   
+  }
+  
